@@ -22,6 +22,8 @@
 `python run.py`
 
 
+Specifying the dataset in `config.yaml` will trigger an automatic download. Please set an appropriate maximum sequence length for each dataset before training.
+
 
 ## Acknowledgment
 

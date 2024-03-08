@@ -13,7 +13,11 @@ expand: 2                       # (int) Block expansion factor
 
 # dataset settings
 dataset: ml-1m
-MAX_ITEM_LIST_LENGTH: 200
+MAX_ITEM_LIST_LENGTH: 200       # 200 for MovieLens-1M
+
+# dataset: amazon-beauty
+# dataset: amazon-video-games
+# MAX_ITEM_LIST_LENGTH: 50      # 50 for Amazon datasets
 
 USER_ID_FIELD: user_id
 ITEM_ID_FIELD: item_id
