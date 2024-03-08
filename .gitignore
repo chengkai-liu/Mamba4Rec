@@ -1,0 +1,8 @@
+__pycache__/
+log/
+log_tensorboard/
+dataset/
+saved/
+*.pth
+*.pyc
+.DS_Store

@@ -1,0 +1,40 @@
+gpu_id: '0'
+log_wandb: False
+
+# mamba4rec settings
+hidden_size: 64                 # (int) Number of features in the hidden state. 
+num_layers: 1                   # (int) Number of Mamba layers.
+dropout_prob: 0.2               # (float) Dropout rate.
+loss_type: 'CE'                 # (str) Type of loss function. Range in ['BPR', 'CE'].
+
+d_state: 32                     # (int) SSM state expansion factor
+d_conv: 4                       # (int) Local convolution width
+expand: 2                       # (int) Block expansion factor
+
+# dataset settings
+dataset: ml-1m
+MAX_ITEM_LIST_LENGTH: 200
+
+USER_ID_FIELD: user_id
+ITEM_ID_FIELD: item_id
+load_col:
+    inter: [user_id, item_id, timestamp]
+
+user_inter_num_interval: "[5,inf)"
+item_inter_num_interval: "[5,inf)"
+
+# training settings
+epochs: 300
+train_batch_size: 2048
+learner: adam
+learning_rate: 0.001
+eval_step: 1
+stopping_step: 10
+train_neg_sample_args: ~
+
+# evalution settings
+metrics: ['Hit', 'NDCG', 'MRR']
+valid_metric: NDCG@10
+eval_batch_size: 4096
+weight_decay: 0.0
+topk: [10]
