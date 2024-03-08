@@ -115,15 +115,15 @@ class MambaLayer(nn.Module):
                 expand=expand,
             )
         self.dropout = nn.Dropout(dropout)
-        self.layer_norm = nn.LayerNorm(d_model, eps=1e-12)
+        self.LayerNorm = nn.LayerNorm(d_model, eps=1e-12)
         self.ffn = FeedForward(d_model=d_model, inner_size=d_model*4, dropout=dropout)
     
     def forward(self, input_tensor):
         hidden_states = self.mamba(input_tensor)
         if self.num_layers == 1:        # one Mamba layer without residual connection
-            hidden_states = self.layer_norm(self.dropout(hidden_states))
-        else:                           # stacked mamba layers with residual connections
-            hidden_states = self.layer_norm(self.dropout(hidden_states) + input_tensor)
+            hidden_states = self.LayerNorm(self.dropout(hidden_states))
+        else:                           # stacked Mamba layers with residual connections
+            hidden_states = self.LayerNorm(self.dropout(hidden_states) + input_tensor)
         hidden_states = self.ffn(hidden_states)
         return hidden_states
 
