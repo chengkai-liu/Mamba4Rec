@@ -19,10 +19,21 @@
 
 ### Run
 
-`python run.py`
+```python run.py```
 
 
-Specifying the dataset in `config.yaml` will trigger an automatic download. Please set an appropriate maximum sequence length for each dataset before training.
+Specifying the dataset in `config.yaml` will trigger an automatic download. Please set an appropriate maximum sequence length in `config.yaml` for each dataset before training.
+
+
+## Citation
+```
+@article{liu2024mamba4rec,
+      title={Mamba4Rec: Towards Efficient Sequential Recommendation with Selective State Space Models}, 
+      author={Chengkai Liu and Jianghao Lin and Jianling Wang and Hanzhou Liu and James Caverlee},
+      journal={arXiv preprint arXiv:2403.03900},
+      year={2024}
+}
+```
 
 
 ## Acknowledgment
