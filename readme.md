@@ -17,6 +17,8 @@
   * `pip install causal-conv1d>=1.2.0`
   * `pip install mamba-ssm`
 
+You can also refer to the required environment specifications in `environment.yaml`.
+
 ### Run
 
 ```python run.py```
@@ -26,7 +28,7 @@ Specifying the dataset in `config.yaml` will trigger an automatic download. Plea
 
 
 ## Citation
-```
+```bibtex
 @article{liu2024mamba4rec,
       title={Mamba4Rec: Towards Efficient Sequential Recommendation with Selective State Space Models}, 
       author={Chengkai Liu and Jianghao Lin and Jianling Wang and Hanzhou Liu and James Caverlee},
