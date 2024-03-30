@@ -2,7 +2,7 @@ __pycache__/
 log/
 log_tensorboard/
 # dataset/
-amazon*
+amazon-*/
 saved/
 *.pth
 *.pyc
