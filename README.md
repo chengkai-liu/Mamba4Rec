@@ -30,10 +30,10 @@ Specifying the dataset in `config.yaml` will trigger an automatic download. Plea
 ## Citation
 ```bibtex
 @article{liu2024mamba4rec,
-      title={Mamba4Rec: Towards Efficient Sequential Recommendation with Selective State Space Models}, 
-      author={Chengkai Liu and Jianghao Lin and Jianling Wang and Hanzhou Liu and James Caverlee},
-      journal={arXiv preprint arXiv:2403.03900},
-      year={2024}
+  title={Mamba4rec: Towards efficient sequential recommendation with selective state space models},
+  author={Liu, Chengkai and Lin, Jianghao and Wang, Jianling and Liu, Hanzhou and Caverlee, James},
+  journal={arXiv preprint arXiv:2403.03900},
+  year={2024}
 }
 ```
 
