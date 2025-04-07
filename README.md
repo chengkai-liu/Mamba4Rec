@@ -1,6 +1,6 @@
 # Mamba4Rec
 
-> **Mamba4Rec: Towards Efficient Sequential Recommendation with Selective State Space Models (RelKD@KDD 2024 Best Paper Award Award)**\
+> **Mamba4Rec: Towards Efficient Sequential Recommendation with Selective State Space Models (RelKD@KDD 2024 Best Paper Award)**\
 > Chengkai Liu, Jianghao Lin, Jianling Wang, Hanzhou Liu, James Caverlee\
 > Paper: https://arxiv.org/abs/2403.03900
 
